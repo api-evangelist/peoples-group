@@ -1,0 +1,145 @@
+aid: peoples-group
+name: Peoples Group
+review:
+  question: >-
+    Does Peoples Group publish a public, self-serve developer portal with downloadable
+    OpenAPI/Swagger specifications for its payment and banking-as-a-service APIs?
+  answer: false
+  date: '2026-07-24'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Peoples Group (legal name Peoples Trust Company, operating as Peoples Group) is a
+    Vancouver-based Canadian trust company and chartered-bank group founded in 1985,
+    owned by the Triple Five Group, with offices in Vancouver, Calgary, Toronto, and
+    Montreal. Its fintech and payments arm provides embedded banking-as-a-service to
+    program managers, fintechs, brokers, and merchants across Canada.
+
+    Peoples Group operates real, in-production APIs — Interac e-Transfer (Send,
+    Request Money, AutoDeposit), Electronic Funds Transfer (EFT) for CAD/USD debits
+    and credits, bill payment to 12,000+ Canadian billers, push-to-card payouts via
+    Visa Direct and Mastercard Send, and card issuing under Visa/Mastercard BIN
+    sponsorship. However, the public developer posture is thin: there is NO public
+    self-serve developer portal, NO downloadable OpenAPI/Swagger specification, and NO
+    public Postman workspace discoverable as of the review date. The product surface
+    is documented only as marketing/solution pages on the corporate site
+    (peoplesgroup.com/fintech), and every path is a "talk to our experts" /
+    "Contact Us" call to action. API access is partnership- and sales-gated behind a
+    client relationship rather than open signup.
+
+    Subdomain probes for developer.peoplesgroup.com, docs.peoplesgroup.com,
+    developers.peoplesgroup.com, api.peoplesgroup.com, api-docs.peoplesgroup.com, and
+    status.peoplesgroup.com did not resolve (connection failed). Path probes for
+    /developers, /developer, /docs, /api, /fintech/developers, and /fintech/api under
+    peoplesgroup.com all returned HTTP 404. The former product microsite
+    peoplespaymentssolutions.com resolves (Cloudflare) but does not complete a TLS
+    handshake to automated clients and returned no fetchable content, so it appears
+    decommissioned or hard-gated; it is not treated as a live public portal.
+
+    Home market is Canada. This fits the Canadian payments seam: consumer money
+    movement rides Interac e-Transfer while Payments Canada builds the ISO 20022
+    Real-Time Rail (RTR). In February 2026 Peoples Group announced a partnership with
+    Fiserv to build a next-generation, always-on payments platform carrying rich
+    ISO 20022 data over direct connections to Canada's payment systems — an RTR-facing
+    modernization move, but the resulting APIs remain partnership-gated, not public.
+
+    Because no downloadable spec, self-serve portal, or public Postman collection was
+    found, no OpenAPI/Swagger/AsyncAPI/GraphQL/gRPC artifact was harvested. The auth
+    model is not publicly documented; no anonymous /.well-known/openid-configuration or
+    /.well-known/oauth-authorization-server was served by any resolvable host. The
+    apis[] entries in apis.yml point at the real product documentation pages only.
+  homeMarket: Canada
+  tier: embedded-baas
+  developerPortal:
+    url: ''
+    confirmed: false
+    note: >-
+      No public self-serve developer portal found. Product docs are marketing/solution
+      pages under https://www.peoplesgroup.com/fintech; access is via "Contact Us".
+  downloadableSpecs:
+    found: false
+    count: 0
+    note: No OpenAPI/Swagger/AsyncAPI specification is publicly downloadable.
+  authModel:
+    scheme: undocumented
+    note: >-
+      Authentication scheme is not publicly documented; API credentials are issued to
+      onboarded clients under a partnership/BIN-sponsorship relationship.
+  webhooksEvents:
+    found: false
+    note: >-
+      No public webhook/event catalog or AsyncAPI is published. Real-time flows
+      (e.g. Interac e-Transfer receipt) likely use callbacks under client integration,
+      but no public documentation confirms an event catalog.
+  postman:
+    found: false
+    note: No public Postman collection or workspace was discovered.
+  rails:
+    iso20022: >-
+      Modernizing toward ISO 20022 via the Feb 2026 Fiserv partnership for direct
+      connections to Canada's payment systems and the Real-Time Rail (RTR).
+    schemeDocPosture: >-
+      Card money movement rides Visa Direct and Mastercard Send scheme rails; scheme
+      documentation is governed by Visa/Mastercard, not published by Peoples Group.
+  transports:
+  - protocol: REST
+    scheme: https
+    documented: true
+    note: >-
+      Product pages describe HTTPS REST APIs for e-Transfer, EFT, Bill Pay, and
+      push-to-card, but no base URL or reference documentation is public.
+  - protocol: WebSocket
+    scheme: wss
+    documented: false
+    note: No WebSocket surface is documented.
+  - protocol: GraphQL
+    documented: false
+    note: No GraphQL surface is documented.
+sources:
+- url: https://www.peoplesgroup.com/
+  type: Website
+  httpStatus: 200
+  note: Corporate homepage; no developer/API/blog/status/pricing links in navigation.
+- url: https://www.peoplesgroup.com/fintech/solutions/payments
+  type: Documentation
+  httpStatus: 200
+  note: Fintech payment solutions overview (card issuing, merchant acquiring, money movement, trust services).
+- url: https://www.peoplesgroup.com/fintech/solutions/payments/money-movement
+  type: Documentation
+  httpStatus: 200
+  note: Money movement page; lists Interac e-Transfer, EFT, Visa Direct & Mastercard Send, Bill Pay. CTA is "Talk to our experts".
+- url: https://www.peoplesgroup.com/fintech/solutions/payments/card-issuing
+  type: Documentation
+  httpStatus: 200
+  note: Card issuing (BIN sponsorship) solution page.
+- url: https://www.peoplesgroup.com/contact-us
+  type: Support
+  httpStatus: 200
+  note: Sole path to API access — partnership/sales-gated.
+- url: https://developer.peoplesgroup.com/
+  type: DeveloperPortal
+  httpStatus: 000
+  note: Did not resolve (connection failed) — no developer subdomain.
+- url: https://docs.peoplesgroup.com/
+  type: Documentation
+  httpStatus: 000
+  note: Did not resolve — no docs subdomain.
+- url: https://www.peoplesgroup.com/fintech/developers
+  type: DeveloperPortal
+  httpStatus: 404
+  note: No developer path under the fintech site.
+- url: https://peoplespaymentssolutions.com/
+  type: Website
+  httpStatus: 000
+  note: Former product microsite; resolves via Cloudflare DNS but TLS handshake fails to automated clients — treated as decommissioned/hard-gated, not a live public portal.
+- url: https://en.wikipedia.org/wiki/Peoples_Group
+  type: Reference
+  httpStatus: 200
+  note: Company identity — Peoples Trust Company, founded 1985, Vancouver, Triple Five Group ownership.
+actions:
+  openapiHarvested: false
+  specsCount: 0
+  reason: >-
+    No public downloadable OpenAPI/Swagger, no self-serve developer portal, and no
+    public Postman workspace exist to harvest. Identity and the real (partnership-gated)
+    API product family were captured in apis.yml pointing at live product documentation.
