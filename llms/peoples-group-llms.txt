@@ -1,0 +1,26 @@
+# Peoples Group
+
+> Peoples Group is the operating name of Peoples Trust Company, a Vancouver-based Canadian trust company and chartered-bank group (founded 1985, owned by the Triple Five Group) whose fintech and payments arm provides embedded banking-as-a-service to program managers, fintechs, brokers, and merchants across Canada. Its APIs are real and in production, but access is partnership- and sales-gated: there is no public self-serve developer portal, no downloadable OpenAPI/Swagger specification, and no public Postman workspace. Integration is arranged through a client relationship and the product documentation lives on the corporate fintech site.
+
+## APIs
+
+- [Interac e-Transfer API](https://www.peoplesgroup.com/fintech/solutions/payments/money-movement): API-driven Interac e-Transfer for Canadian money movement — Send Money, Request Money, Receive AutoDeposit, and Receive Question-and-Answer flows.
+- [EFT API](https://www.peoplesgroup.com/fintech/solutions/payments/money-movement): Electronic Funds Transfer for pre-authorized debits and credits to and from Canadian-domiciled accounts in CAD and USD, with individual, batch, and recurring transactions.
+- [Bill Pay API](https://www.peoplesgroup.com/fintech/solutions/payments/money-movement): Bill payment to more than 12,000 billers across Canada, with individual, batch, and recurring payments.
+- [Push-to-Card API (Visa Direct & Mastercard Send)](https://www.peoplesgroup.com/fintech/solutions/payments/money-movement): Real-time push-to-card disbursements via Visa Direct and Mastercard Send for B2B and B2C payouts.
+- [Card Issuing](https://www.peoplesgroup.com/fintech/solutions/payments/card-issuing): Prepaid and credit card issuing through Visa and Mastercard BIN sponsorship for fintech program managers.
+
+## Docs
+
+- [Fintech Solutions](https://www.peoplesgroup.com/fintech): Overview of the Peoples Group fintech and payments arm.
+- [Payments](https://www.peoplesgroup.com/fintech/solutions/payments): Payments product hub.
+- [Money Movement](https://www.peoplesgroup.com/fintech/solutions/payments/money-movement): Interac e-Transfer, EFT, Bill Pay, and Push-to-Card product documentation.
+- [Card Issuing](https://www.peoplesgroup.com/fintech/solutions/payments/card-issuing): Card program issuing and management.
+- [Merchant Acquiring](https://www.peoplesgroup.com/fintech/solutions/payments/merchant-acquiring): Merchant acquiring services.
+- [Trust Account Services](https://www.peoplesgroup.com/fintech/solutions/payments/trust-services): Trust account services for program funds.
+
+## Optional
+
+- [News & Insights](https://www.peoplesgroup.com/about-us/news-insights/press-releases): Corporate press releases (includes the February 2026 Fiserv next-generation payments-platform partnership announcement).
+- [Privacy & Security](https://www.peoplesgroup.com/about-us/legal/privacy-security): Privacy and security posture; Peoples Trust Company and Peoples Bank of Canada are CDIC members.
+- [Contact](https://www.peoplesgroup.com/contact-us): Sales and partnership contact for API access.

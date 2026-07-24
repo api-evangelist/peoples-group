@@ -1,0 +1,55 @@
+generated: '2026-07-24'
+method: searched
+source: >-
+  https://www.peoplesgroup.com/fintech/solutions/payments/money-movement,
+  https://www.peoplesgroup.com/about-us/news-insights/press-releases,
+  https://www.peoplesgroup.com/about-us/legal/privacy-security
+note: >-
+  Derived from Peoples Group's published product and corporate pages plus the
+  February 2026 Fiserv partnership announcement. No OpenAPI is published, so
+  spec-derived security/error conformance could not be asserted. No public PCI
+  DSS / SOC 2 / ISO 27001 certification statement was found, so no Compliance
+  pointer is emitted.
+standards:
+  - id: iso-20022
+    conforms: true
+    status: in-build
+    evidence: >-
+      February 2026 Peoples Group + Fiserv partnership to build a next-generation,
+      always-on payments platform carrying rich ISO 20022 data over direct
+      connections to Canada's payment systems, positioning it for Payments
+      Canada's Real-Time Rail.
+  - id: interac-e-transfer
+    conforms: true
+    evidence: >-
+      Documented Interac e-Transfer product supporting Send Money, Request Money,
+      Receive AutoDeposit, and Receive Question-and-Answer flows.
+  - id: eft-canada
+    conforms: true
+    evidence: >-
+      Electronic Funds Transfer (EFT) product for pre-authorized CAD and USD
+      debits and credits to Canadian-domiciled accounts (Payments Canada AFT rails).
+  - id: visa-network-rules
+    conforms: true
+    evidence: >-
+      Visa BIN sponsorship for card issuing and Visa Direct push-to-card payouts.
+  - id: mastercard-network-rules
+    conforms: true
+    evidence: >-
+      Mastercard BIN sponsorship for card issuing and Mastercard Send push-to-card payouts.
+  - id: cdic-deposit-insurance
+    conforms: true
+    evidence: >-
+      Peoples Trust Company and Peoples Bank of Canada are members of the Canada
+      Deposit Insurance Corporation (CDIC).
+  - id: osfi-regulated-institution
+    conforms: true
+    evidence: >-
+      Federally regulated Canadian trust company / chartered-bank group founded
+      in 1985 (OSFI-supervised).
+  - id: oauth2
+    conforms: false
+    evidence: No public OpenAPI or auth documentation; authentication model is not published.
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: No public OpenAPI; error envelope is not published.

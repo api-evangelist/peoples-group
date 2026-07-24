@@ -35,7 +35,7 @@ tags:
 - ISO 20022
 - BIN Sponsorship
 created: '2026-07-24'
-modified: '2026-07-24'
+modified: '2026-07-25'
 specificationVersion: '0.19'
 apis:
 - aid: peoples-group:peoples-group-interac-etransfer-api
@@ -114,6 +114,8 @@ apis:
   - type: Documentation
     url: https://www.peoplesgroup.com/fintech/solutions/payments/card-issuing
 common:
+- type: DomainSecurity
+  url: security/peoples-group-domain-security.yml
 - type: Website
   url: https://www.peoplesgroup.com/
 - type: Documentation
@@ -132,6 +134,12 @@ common:
   url: https://www.peoplesgroup.com/about-us/legal/privacy-security
 - type: LinkedIn
   url: https://ca.linkedin.com/company/peoples-group-of-companies
+- type: Blog
+  url: https://www.peoplesgroup.com/about-us/news-insights/press-releases
+- type: Conformance
+  url: conformance/peoples-group-conformance.yml
+- type: LLMsTxt
+  url: llms/peoples-group-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
