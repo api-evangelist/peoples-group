@@ -24,6 +24,19 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.j
 tags:
 - Payments
 - Canada
+- Banking as a Service
+- Card Issuing
+- Money Movement
+- Interac e-Transfer
+- EFT
+- Bill Payments
+- Merchant Acquiring
+- Real-Time Payments
+- ISO 20022
+- BIN Sponsorship
+tags_raw:
+- Payments
+- Canada
 - Banking-as-a-Service
 - Card Issuing
 - Money Movement
@@ -77,6 +90,9 @@ apis:
     Peoples Group clients; no public OpenAPI/Swagger definition is available.
   humanURL: https://www.peoplesgroup.com/fintech/solutions/payments/money-movement
   tags:
+  - Bill Payments
+  - Money Movement
+  tags_raw:
   - Bill Payment
   - Money Movement
   properties:
