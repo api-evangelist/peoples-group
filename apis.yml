@@ -20,6 +20,17 @@ description: >-
   public self-serve developer portal, no downloadable OpenAPI/Swagger specification,
   and no public Postman workspace. Integration is arranged through a client
   relationship and the product documentation lives on the corporate fintech site.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - Payments
