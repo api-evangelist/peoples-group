@@ -1,4 +1,4 @@
-# Peoples Group (peoples-group)
+# Peoples Group
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,78 +64,93 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Peoples Group is the operating name of Peoples Trust Company, a Vancouver-based Canadian trust company and chartered-bank group founded in 1985 and owned by the Triple Five Group. Alongside its mortgage, deposit, and commercial-lending businesses, Peoples Group runs a fintech and payments arm that provides embedded banking-as-a-service to program managers, fintechs, brokers, and merchants across Canada — card issuing under Visa/Mastercard BIN sponsorship, merchant acquiring, trust account services, and API-driven money movement (Interac e-Transfer, EFT, bill payment, and push-to-card payouts via Visa Direct and Mastercard Send).
+Peoples Group is the operating name of Peoples Trust Company, a Vancouver-based Canadian trust company and chartered-bank group founded in 1985 and owned by the Triple Five Group. Alongside its mortgage, deposit, and commercial-lending businesses, Peoples Group runs a fintech and payments arm that provides embedded banking-as-a-service to program managers, fintechs, brokers, and merchants across Canada: prepaid and credit card issuing under Visa and Mastercard BIN sponsorship, merchant acquiring, trust account services, and API-driven money movement including Interac e-Transfer (send, request money, and autodeposit), Electronic Funds Transfer (EFT) for CAD and USD debits and credits, bill payment to more than 12,000 Canadian billers, and push-to-card payouts via Visa Direct and Mastercard Send. In February 2026 Peoples Group partnered with Fiserv to build a next-generation, always-on payments platform carrying rich ISO 20022 data over direct connections to Canada's payment systems, positioning it for Payments Canada's Real-Time Rail. Its APIs are real and in production, but access is partnership- and sales-gated: there is no public self-serve developer portal, no downloadable OpenAPI/Swagger specification, and no public Postman workspace. Integration is arranged through a client relationship and the product documentation lives on the corporate fintech site.
 
-In February 2026 Peoples Group partnered with Fiserv to build a next-generation, always-on payments platform carrying rich ISO 20022 data over direct connections to Canada's payment systems, positioning it for Payments Canada's Real-Time Rail (RTR).
+**Areas:** Payments · Canada · Banking as a Service · Card Issuing · Money Movement · Interac e-Transfer · EFT · Bill Payments · Merchant Acquiring · Real-Time Payments · ISO 20022 · BIN Sponsorship
 
-**API posture (honest):** Peoples Group's APIs are real and in production, but access is partnership- and sales-gated. There is no public self-serve developer portal, no downloadable OpenAPI/Swagger specification, and no public Postman workspace. Product documentation lives as solution pages on the corporate fintech site, and integration is arranged through a client relationship.
+## Peoples Group on APIs.io
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/peoples-group/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/peoples-group/refs/heads/main/apis.yml)
+Everything profiled for Peoples Group is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/peoples-group/](https://apis.io/providers/peoples-group/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (5)
 
-- Payments
-- Canada
-- Banking-as-a-Service
-- Card Issuing
-- Money Movement
-- Interac e-Transfer
-- EFT
-- Bill Payment
-- Merchant Acquiring
-- Real-Time Payments
-- ISO 20022
-- BIN Sponsorship
+- [Peoples Group Interac e-Transfer API](https://apis.io/apis/peoples-group/peoples-group-interac-etransfer-api/) — API-driven Interac e-Transfer for Canadian money movement, supporting Send Money, Request Money, Receive AutoDeposit, and Receive Question-and-Answer flows…
+- [Peoples Group EFT API](https://apis.io/apis/peoples-group/peoples-group-eft-api/) — Electronic Funds Transfer API for pre-authorized debits and credits to and from Canadian-domiciled accounts in CAD and USD, used for disbursements,…
+- [Peoples Group Bill Pay API](https://apis.io/apis/peoples-group/peoples-group-bill-pay-api/) — Bill payment API that processes payments to more than 12,000 billers across Canada, with support for individual, batch, and recurring payments. Access is…
+- [Peoples Group Push-to-Card API (Visa Direct & Mastercard Send)](https://apis.io/apis/peoples-group/peoples-group-push-to-card-api/) — Real-time push-to-card disbursements via Visa Direct and Mastercard Send, letting clients pay out funds directly to eligible Visa and Mastercard cards for…
+- [Peoples Group Card Issuing](https://apis.io/apis/peoples-group/peoples-group-card-issuing/) — Prepaid and credit card issuing through Visa and Mastercard BIN sponsorship for fintech program managers in Canada, with the integration technology and APIs…
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-07-24
-- **Modified:** 2026-07-24
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Security (1)
 
-### Peoples Group Interac e-Transfer API
+Authentication, trust centre, and vulnerability disclosure.
 
-API-driven Interac e-Transfer for Canadian money movement — Send Money, Request Money, Receive AutoDeposit, and Receive Question-and-Answer flows.
+- [Peoples Group Domain Security](https://apis.io/security/peoples-group/peoples-group-domain-security/)
 
-- **Human URL:** [https://www.peoplesgroup.com/fintech/solutions/payments/money-movement](https://www.peoplesgroup.com/fintech/solutions/payments/money-movement)
+## Where to find this API
 
-### Peoples Group EFT API
-
-Electronic Funds Transfer for pre-authorized CAD/USD debits and credits to and from Canadian-domiciled accounts, for disbursements, remittances, payroll, and prepaid card loads.
-
-- **Human URL:** [https://www.peoplesgroup.com/fintech/solutions/payments/money-movement](https://www.peoplesgroup.com/fintech/solutions/payments/money-movement)
-
-### Peoples Group Bill Pay API
-
-Bill payment to more than 12,000 billers across Canada, with individual, batch, and recurring payments.
-
-- **Human URL:** [https://www.peoplesgroup.com/fintech/solutions/payments/money-movement](https://www.peoplesgroup.com/fintech/solutions/payments/money-movement)
-
-### Peoples Group Push-to-Card API (Visa Direct & Mastercard Send)
-
-Real-time push-to-card disbursements to eligible Visa and Mastercard cards for B2B and B2C payouts.
-
-- **Human URL:** [https://www.peoplesgroup.com/fintech/solutions/payments/money-movement](https://www.peoplesgroup.com/fintech/solutions/payments/money-movement)
-
-### Peoples Group Card Issuing
-
-Prepaid and credit card issuing through Visa/Mastercard BIN sponsorship for fintech program managers in Canada.
-
-- **Human URL:** [https://www.peoplesgroup.com/fintech/solutions/payments/card-issuing](https://www.peoplesgroup.com/fintech/solutions/payments/card-issuing)
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.peoplesgroup.com/)
 - [Documentation](https://www.peoplesgroup.com/fintech/solutions/payments)
-- [Support / Contact](https://www.peoplesgroup.com/contact-us)
-- [Login](https://www.peoplesgroup.com/personal/portal-login)
-- [Terms of Service](https://www.peoplesgroup.com/about-us/legal/terms-and-conditions)
-- [Privacy Policy](https://www.peoplesgroup.com/about-us/legal/privacy-security/privacy-policy)
+- [Support](https://www.peoplesgroup.com/contact-us)
+- [Blog](https://www.peoplesgroup.com/about-us/news-insights/press-releases)
 - [Security](https://www.peoplesgroup.com/about-us/legal/privacy-security)
-- [LinkedIn](https://ca.linkedin.com/company/peoples-group-of-companies)
+- [Terms of service](https://www.peoplesgroup.com/about-us/legal/terms-and-conditions)
+- [Privacy policy](https://www.peoplesgroup.com/about-us/legal/privacy-security/privacy-policy)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 20.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 69.6 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 27.6 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 24.1** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/peoples-group/](https://apis.io/providers/peoples-group/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Peoples Group: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/peoples-group/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
